@@ -32,7 +32,7 @@
     </div>
 
     <div class="task-list">
-      <h2>Done Tasks:</h2>
+      <h2>Completed Tasks:</h2>
       <ul>
         <li v-for="task in doneTasks" :key="task.id">
           <input type="checkbox" v-model="task.done" @change="updateTaskStatus(task)" />
