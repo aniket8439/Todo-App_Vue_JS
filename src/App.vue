@@ -1,3 +1,5 @@
+<!-- for project set please see readme.md file of this assignment -->
+
 <template>
   <div class="container">
     <h1>
@@ -179,8 +181,8 @@ body {
   border-radius: 8px;
   background-color: whitesmoke;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow-y: auto; /* Add vertical scrollbar when content overflows */
-  max-height: 100vh; /* Set max height to viewport height */
+  overflow-y: auto; 
+  max-height: 100vh;
   margin: 0 auto;
 }
 h1{

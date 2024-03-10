@@ -1,4 +1,10 @@
 # todo-app
+
+## GITHUB LINK OF PROJECT 
+
+```
+https://github.com/aniket8439/Todo-App_Vue_JS
+```
 ## FEATURES
 ```
 - add tasks
