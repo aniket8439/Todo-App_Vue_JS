@@ -1,5 +1,5 @@
 <template>
-  <div class="app-container">
+  <div class="container">
     <h1>
       <span class="T">T</span>
       <span class="O">O</span>
@@ -131,7 +131,7 @@ export default {
       axios
         .delete(`http://localhost:3000/tasks/${taskId}`)
         .then(() => {
-          this.fetchTasks(); // Fetch updated tasks
+          this.fetchTasks(); 
         })
         .catch((error) => {
           console.error('Error deleting task:', error);
@@ -173,12 +173,15 @@ body {
 }
 
 
-.app-container {
+.container {
   max-width: 800px;
   padding: 20px;
   border-radius: 8px;
   background-color: whitesmoke;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Add vertical scrollbar when content overflows */
+  max-height: 100vh; /* Set max height to viewport height */
+  margin: 0 auto;
 }
 h1{
   text-align: center;
@@ -342,7 +345,7 @@ li {
 
 /* Media Query for responsiveness */
 @media (max-width: 600px) {
-  .app-container{
+  .container{
     margin-top: 120px;
   }
   .tasks-container {
@@ -361,7 +364,7 @@ li {
     font-size: 14px; 
   }
 
-  .app-container{
+  .container{
     margin-top: 250px;
     background: linear-gradient(to bottom right, #3498db, #1abc9c) !important;
   }
