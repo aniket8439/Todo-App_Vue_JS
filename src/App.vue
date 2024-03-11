@@ -1,4 +1,4 @@
-<!-- for project set please see readme.md file of this assignment -->
+<!-- for project set up please see readme.md file of this assignment -->
 
 <template>
   <div class="container">
